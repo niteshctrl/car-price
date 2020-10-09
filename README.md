@@ -36,7 +36,7 @@ This dataset contains information about used cars listed on www.cardekho.com The
 * Most of the cars have been sold for under ₹2M with the most costly selling going as high as ₹8M. Probably, some premium car.
 * Mean and median prices being ₹ 473000 and ₹ 350000 respectively.
 
-#### Taking log values of the 'selling_price' minimized the skewness
+> Taking log values of the 'selling_price' minimized the skewness
 * This looked much better than the previous one and we will be using this for our modeling.
 
 #### Distribtion of 'km_driven'
