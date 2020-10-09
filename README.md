@@ -44,5 +44,15 @@ This dataset contains information about used cars listed on www.cardekho.com The
 * The log transformstion didn't work here as in the case of 'selling_price'.
 * Removal of data above 95 quantile made the data less skewed and better for modelling.
 
+## Model Exploration
+
+> * The best output came from **Random Forest** with a R-squared value of 0.8665.
+> * I used RandomizedSearch for Hyperpaprameter tuning with default 5-fold CV technique. The best parameters came out to be n_estimators = 700 and criterion='mae'.
+
+* Other models tried were:
+1. Linear Regression : R-squared = -1.22
+2. SVM Regressor : R-squared = 0.6150
+3. Gradient Boosted Decision Trees : R-squared = 0.6892
+
 
 
