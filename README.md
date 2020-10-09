@@ -44,6 +44,11 @@ This dataset contains information about used cars listed on www.cardekho.com The
 * The log transformstion didn't work here as in the case of 'selling_price'.
 * Removal of data above 95 quantile made the data less skewed and better for modelling.
 
+## Featurization
+
+Here I had to featurize the various categorical variables in the data into a processable format.
+
+
 ## Model Exploration
 
 > * The best output came from **Random Forest** with a R-squared value of 0.8665.
