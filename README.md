@@ -47,5 +47,16 @@ This dataset contains information about used cars listed on www.cardekho.com The
 * Mean and median prices being ₹ 473000 and ₹ 350000 respectively.
 
 #### Distribution of log values of 'selling_price'
+![log Distribution](https://github.com/niteshctrl/car-price/blob/master/images/6.png)
+* This looks much better than the previous one and we will be using this for our modeling.
+
+#### Distribtion of 'km_driven'
+![km_driven distribution](https://github.com/niteshctrl/car-price/blob/master/images/7.png)
+#### Distribution of 'km_driven' with removed data points
+![km_driven with removed points](https://github.com/niteshctrl/car-price/blob/master/images/8.png)
+* The log trick didn't work here as in the case of 'selling_price'.
+* Removal of data above 95 quantile makes the data less skewed and better for modelling.
+* Mean distance driven = 69250 km
+* Median distance driven = 60000 km
 
 
