@@ -3,7 +3,7 @@
 ## Introduction
 ### Problem Statement:
 
-Predict selling price of used cars
+Predict resale values of cars
 
 ### Data details:
 This dataset contains information about used cars listed on www.cardekho.com The columns in the given dataset are as follows:
