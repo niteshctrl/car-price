@@ -46,12 +46,22 @@ This dataset contains information about used cars listed on www.cardekho.com The
 
 ## Featurization
 
-Here I had to featurize the various categorical variables in the data into a processable format.
+This was the trickiest part of the entire project. Here the task is to featurize the various categorical variables in the data into a processable format.
+Below are the mentioned features with their transformations:
+1. Names: Target Encoding
+2. Year : No transformation
+3. Selling Price(Dependent Variable) : Log of the corresponding values 
+4. Fuel : Ordinal Encoding
+5. Seller Type : Ordinal Encoding
+6. Transmission : Ordinal Encoding
+7. Owner : Ordinal Encoding
+
+A correlation Heatmap after the transformations showed that 'selling_price' is most correlated with 'name', 'transmission', 'year' and then 'fuel' but 'log_selling_price' is with 'year', 'name' , 'fuel' and then 'transmission'.
 
 
 ## Model Exploration
 
-> * The best output came from **Random Forest** with a R-squared value of 0.8665.
+> * The best output came from **Random Forest** with a R-squared value of **0.8665**.
 > * I used RandomizedSearch for Hyperpaprameter tuning with default 5-fold CV technique. The best parameters came out to be n_estimators = 700 and criterion='mae'.
 
 * Other models tried were:
