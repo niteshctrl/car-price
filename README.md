@@ -61,13 +61,13 @@ A correlation Heatmap after the transformations showed that 'selling_price' is m
 
 ## Model Exploration
 
-> * The best output came from **Random Forest** with a R-squared value of **0.8665**.
-> * I used RandomizedSearch for Hyperpaprameter tuning with default 5-fold CV technique. The best parameters came out to be n_estimators = 700 and criterion='mae'.
-
-* Other models tried were:
+Models tried were:
 1. Linear Regression : R-squared = -1.22
 2. SVM Regressor : R-squared = 0.6150
-3. Gradient Boosted Decision Trees : R-squared = 0.6892
+3. Random Forest : R-squared = 0.8665
+4. Gradient Boosted Decision Trees : R-squared = 0.6892
 
+## Conclusion
 
-
+> * The best output came from **Random Forest** with a R-squared value of **0.8665**.
+> * I used RandomizedSearch for Hyperpaprameter tuning with default 5-fold CV technique. The best parameters came out to be n_estimators = 700 and criterion='mae'.
